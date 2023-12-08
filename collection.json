@@ -1,0 +1,1209 @@
+{
+	"info": {
+		"_postman_id": "bf7a211a-9be3-418a-9079-b6fe7ecc7072",
+		"name": "complain_management_sys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25520214"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login_user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"123456\",\r\n    \"password\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/user/login",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/user/login",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 15:35:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "424"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA0OTcxMCwianRpIjoiYzcxNWI3ZmMtN2JmZi00ZTYyLWJlNmUtNzgxYjlkY2M1ZTk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDQ5NzEwLCJleHAiOjE3MDIwNTMzMTB9.old2iLreCVf2QdcITAUhJo6br9baxCcorZ0auK_uuIU\"\n    },\n    \"errors\": [],\n    \"message\": \"user login successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "add_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA0OTg3OSwianRpIjoiN2Q3YzkyOWMtMTExNC00YjRkLTgzYWUtMzVjMDNkMzc3ODZjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDQ5ODc5LCJleHAiOjE3MDIwNTM0Nzl9.6z7oCHgMYOGkfsIEv0hZ4GIBOpXuPv4zQ0aS5JaOOws",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"staff1@gmail.com\",\r\n    \"phone\": \"647835454\",\r\n    \"password\": \"staff\",\r\n    \"role_type\": \"staff\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/user/add",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"staff1@gmail.com\",\r\n    \"phone\": \"647835454\",\r\n    \"password\": \"staff\",\r\n    \"role_type\": \"staff\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/user/add",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"user",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 16:18:35 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "111"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 13\n    },\n    \"errors\": [],\n    \"message\": \"User added successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "update_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA2NDQyMywianRpIjoiNDcxNDJlYjctOWIxNi00ZmY0LTkzZWEtNzBiOGU5YTBjNDIyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDY0NDIzLCJleHAiOjE3MDIwNjgwMjN9.YJpefuPxrWYNG1NK0Oi63Yb_VPk5-Fo5oLKtxI3k_Qc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"admin\",\r\n    \"role_type\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/user/update/11",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"user",
+								"update",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"admin\",\r\n    \"role_type\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/user/update/11",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"user",
+										"update",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 19:46:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "97"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [],\n    \"message\": \"User updated successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "delete_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA2NDQyMywianRpIjoiNDcxNDJlYjctOWIxNi00ZmY0LTkzZWEtNzBiOGU5YTBjNDIyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDY0NDIzLCJleHAiOjE3MDIwNjgwMjN9.YJpefuPxrWYNG1NK0Oi63Yb_VPk5-Fo5oLKtxI3k_Qc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/user/delete/14",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"user",
+								"delete",
+								"14"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/user/delete/12",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"user",
+										"delete",
+										"12"
+									]
+								}
+							},
+							"status": "BAD REQUEST",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 20:07:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "97"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [\n        \"Invalid user id\"\n    ],\n    \"message\": \"\",\n    \"status_code\": 400\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/user/delete/14",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"user",
+										"delete",
+										"14"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 20:10:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "97"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [],\n    \"message\": \"User deleted successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "complaint",
+			"item": [
+				{
+					"name": "add_complaint_type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA1ODc0NywianRpIjoiYTIyNjU5YzgtNzFkNi00NzVlLThmNDAtMDk3NDNmMGZjMmMzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MTEsInJvbGUiOiJhZG1pbiJ9LCJuYmYiOjE3MDIwNTg3NDcsImV4cCI6MTcwMjA2MjM0N30.vuXRKSUR7J6ATP6KOBM5srY7o6rTpzBpfajOhSroI1Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"critical\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/add_type",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"add_type"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"critical\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/add_type",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"add_type"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 18:06:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1\n    },\n    \"errors\": [],\n    \"message\": \"Complaint type added successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "add_complaint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA2MDc5MSwianRpIjoiOTQ4ZDZkOWItODdiMC00YTVmLWE4MDItNTAzZDYyOGExNzhjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDYwNzkxLCJleHAiOjE3MDIwNjQzOTF9.zwP5TtEB88mX__UUdMuWYzsEQTwxzFSzY7nDkNST6rA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"new complaint\",\r\n    \"description\": \"complaint description\",\r\n    \"complaint_type_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/add",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add_complaint",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"new complaint\",\r\n    \"description\": \"complaint description\",\r\n    \"complaint_type_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/add",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 19:02:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"id\": 1\n    },\n    \"errors\": [],\n    \"message\": \"Complaint added successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "update_complaint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA2NDQyMywianRpIjoiNDcxNDJlYjctOWIxNi00ZmY0LTkzZWEtNzBiOGU5YTBjNDIyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDY0NDIzLCJleHAiOjE3MDIwNjgwMjN9.YJpefuPxrWYNG1NK0Oi63Yb_VPk5-Fo5oLKtxI3k_Qc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/update/14",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"update",
+								"14"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update_complaint",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"complaint title\",\r\n    \"complaint_type_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/update/1",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"update",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 20:28:12 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "102"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [],\n    \"message\": \"Complaint updated successfully\",\n    \"status_code\": 200\n}"
+						},
+						{
+							"name": "update_complaint",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"complaint title\",\r\n    \"complaint_type_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/update/1",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"update",
+										"1"
+									]
+								}
+							},
+							"status": "BAD REQUEST",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 20:28:21 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "136"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [\n        \"No update detect in given data or Invalid complaint id\"\n    ],\n    \"message\": \"\",\n    \"status_code\": 400\n}"
+						}
+					]
+				},
+				{
+					"name": "assign_complaint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA2NDQyMywianRpIjoiNDcxNDJlYjctOWIxNi00ZmY0LTkzZWEtNzBiOGU5YTBjNDIyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDY0NDIzLCJleHAiOjE3MDIwNjgwMjN9.YJpefuPxrWYNG1NK0Oi63Yb_VPk5-Fo5oLKtxI3k_Qc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/1/assign",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"1",
+								"assign"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete_complaint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA2ODY3MiwianRpIjoiMDM1NDdlNDctY2I1Ny00OGY0LTgxNGYtOTAzMTY5YzY2MDZmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MTEsInJvbGUiOiJhZG1pbiJ9LCJuYmYiOjE3MDIwNjg2NzIsImV4cCI6MTcwMjA3MjI3Mn0.KCqDsZOCxZ-Kj9MpGC_ZyWRqf1W7v5LO2QFIrGrY7Bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/1/complete",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"1",
+								"complete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/1/complete",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"1",
+										"complete"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 21:10:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "105"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [],\n    \"message\": \"Complaint completeed successfully\",\n    \"status_code\": 200\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/1/complete",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"1",
+										"complete"
+									]
+								}
+							},
+							"status": "BAD REQUEST",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 21:11:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "139"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [\n        \"Invalid complaint_id or complaint already marked complete\"\n    ],\n    \"message\": \"\",\n    \"status_code\": 400\n}"
+						}
+					]
+				},
+				{
+					"name": "done_complaint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA3MjYwNywianRpIjoiYTZlNWQxMTYtNTRlOS00NWQ3LTgzYWUtMGQxMzExNWM0NWJjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MTEsInJvbGUiOiJhZG1pbiJ9LCJuYmYiOjE3MDIwNzI2MDcsImV4cCI6MTcwMjA3NjIwN30.8vOqJL5Fjep-yXDx7FHzzByp0R56DaC7nQaAFfkm5tA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/huzai/Downloads/1671911726539.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/1/done",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"1",
+								"done"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "done_complaint",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/huzai/Downloads/1671911726539.jpeg"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/1/done",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"complaint",
+										"1",
+										"done"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 22:01:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "101"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [],\n    \"errors\": [],\n    \"message\": \"Complaint doneed successfully\",\n    \"status_code\": 200\n}"
+						}
+					]
+				},
+				{
+					"name": "view_staff_complaints",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA3NDg3MiwianRpIjoiNGM2NjVlZmEtOWY0MS00OWM2LThhNDEtOTA3N2Y4Mzc0YzJhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDc0ODcyLCJleHAiOjE3MDIwNzg0NzJ9.-20VH6MBID-j_3_NuiURfrjYKOQ3Vhi0-peVwqrlDzE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/complaint/view",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"complaint",
+								"view"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/complaint/view",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"complaint",
+										"view"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 22:21:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "358"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"assignee_id\": 13,\n            \"complaint_status_id\": 3,\n            \"complaint_type_id\": 1,\n            \"created_at\": \"Sat, 09 Dec 2023 00:02:36 GMT\",\n            \"description\": \"complaint description\",\n            \"file_url\": \"1702072859.jpeg\",\n            \"id\": 1,\n            \"title\": \"complaint title\"\n        }\n    ],\n    \"errors\": [],\n    \"message\": \"\",\n    \"status_code\": 200\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "dashboard",
+			"item": [
+				{
+					"name": "superadmin_dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwMjA3NDg3MiwianRpIjoiNGM2NjVlZmEtOWY0MS00OWM2LThhNDEtOTA3N2Y4Mzc0YzJhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJpZCI6MSwicm9sZSI6InN1cGVyYWRtaW4ifSwibmJmIjoxNzAyMDc0ODcyLCJleHAiOjE3MDIwNzg0NzJ9.-20VH6MBID-j_3_NuiURfrjYKOQ3Vhi0-peVwqrlDzE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://huzaifakhan113.pythonanywhere.com/dashboard/superadmin",
+							"protocol": "http",
+							"host": [
+								"huzaifakhan113",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"dashboard",
+								"superadmin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "superadmin_dashboard",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://huzaifakhan113.pythonanywhere.com/dashboard/superadmin",
+									"protocol": "http",
+									"host": [
+										"huzaifakhan113",
+										"pythonanywhere",
+										"com"
+									],
+									"path": [
+										"dashboard",
+										"superadmin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.0.1 Python/3.11.5"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 08 Dec 2023 22:34:42 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "453"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"admin_count\": 1,\n        \"resolved_seven_day_complaint_count\": 0,\n        \"resolved_thirty_day_complaint_count\": 0,\n        \"staff_count\": 1,\n        \"top_five_complaint_statuses\": [\n            {\n                \"complaint_type_id\": 1,\n                \"count\": 1,\n                \"name\": \"critical\"\n            }\n        ],\n        \"total_seven_day_complaint_count\": 1,\n        \"total_thirty_day_complaint_count\": 1\n    },\n    \"errors\": [],\n    \"message\": \"superadmin dashboard\",\n    \"status_code\": 200\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -3,9 +3,9 @@ import pymysql
 
 def connect():
     conn = pymysql.connect(
-        host='localhost',
-        user='root',
-        password="root",
+        host='huzaifakhan113.mysql.pythonanywhere-services.com',
+        user='huzaifakhan113',
+        password="cz5vYc2HQbmjfGT",
         db='complaint_management_system',
         cursorclass=pymysql.cursors.DictCursor
     )

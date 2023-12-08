@@ -3,10 +3,10 @@ import pymysql
 
 def connect():
     conn = pymysql.connect(
-        host='localhost',
-        user='root',
-        password="root",
-        db='complaint_management_system',
+        host='huzaifakhan113.mysql.pythonanywhere-services.com',
+        user='huzaifakhan113',
+        password="cz5vYc2HQbmjfGT",
+        db='huzaifakhan113$complaint_management_system',
         cursorclass=pymysql.cursors.DictCursor
     )
     return conn

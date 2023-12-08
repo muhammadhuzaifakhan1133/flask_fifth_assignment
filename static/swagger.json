@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "http://127.0.0.1"
+      "url": "http://huzaifakhan113.pythonanywhere.com"
     }
   ],
   "paths": {
@@ -1153,6 +1153,142 @@
                       "data": [],
                       "errors": [],
                       "message": "Complaint doneed successfully",
+                      "status_code": 200
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/complaint/view": {
+      "get": {
+        "tags": [
+          "complaint"
+        ],
+        "summary": "view_staff_complaints",
+        "description": "view_staff_complaints",
+        "operationId": "viewStaffComplaints",
+        "responses": {
+          "200": {
+            "description": "New Request",
+            "headers": {
+              "Connection": {
+                "schema": {
+                  "type": "string",
+                  "example": "close"
+                }
+              },
+              "Content-Length": {
+                "schema": {
+                  "type": "string",
+                  "example": "358"
+                }
+              },
+              "Date": {
+                "schema": {
+                  "type": "string",
+                  "example": "Fri, 08 Dec 2023 22:21:26 GMT"
+                }
+              },
+              "Server": {
+                "schema": {
+                  "type": "string",
+                  "example": "Werkzeug/3.0.1 Python/3.11.5"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "assignee_id": {
+                            "type": "number",
+                            "example": 13
+                          },
+                          "complaint_status_id": {
+                            "type": "number",
+                            "example": 3
+                          },
+                          "complaint_type_id": {
+                            "type": "number",
+                            "example": 1
+                          },
+                          "created_at": {
+                            "type": "string",
+                            "example": "Sat, 09 Dec 2023 00:02:36 GMT"
+                          },
+                          "description": {
+                            "type": "string",
+                            "example": "complaint description"
+                          },
+                          "file_url": {
+                            "type": "string",
+                            "example": "1702072859.jpeg"
+                          },
+                          "id": {
+                            "type": "number",
+                            "example": 1
+                          },
+                          "title": {
+                            "type": "string",
+                            "example": "complaint title"
+                          }
+                        }
+                      },
+                      "example": [
+                        {
+                          "assignee_id": 13,
+                          "complaint_status_id": 3,
+                          "complaint_type_id": 1,
+                          "created_at": "Sat, 09 Dec 2023 00:02:36 GMT",
+                          "description": "complaint description",
+                          "file_url": "1702072859.jpeg",
+                          "id": 1,
+                          "title": "complaint title"
+                        }
+                      ]
+                    },
+                    "errors": {
+                      "type": "array",
+                      "items": {},
+                      "example": []
+                    },
+                    "message": {
+                      "type": "string",
+                      "example": ""
+                    },
+                    "status_code": {
+                      "type": "number",
+                      "example": 200
+                    }
+                  }
+                },
+                "examples": {
+                  "New Request": {
+                    "value": {
+                      "data": [
+                        {
+                          "assignee_id": 13,
+                          "complaint_status_id": 3,
+                          "complaint_type_id": 1,
+                          "created_at": "Sat, 09 Dec 2023 00:02:36 GMT",
+                          "description": "complaint description",
+                          "file_url": "1702072859.jpeg",
+                          "id": 1,
+                          "title": "complaint title"
+                        }
+                      ],
+                      "errors": [],
+                      "message": "",
                       "status_code": 200
                     }
                   }
