@@ -2,3 +2,4 @@ flask
 pymysql
 pytest
 flask-jwt-extended
+flask_swagger_ui

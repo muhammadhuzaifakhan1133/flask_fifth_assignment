@@ -8,7 +8,7 @@ CREATE TABLE user (
     phone_no VARCHAR(20) NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     created_at DATETIME NOT NULL DEFAULT NOW(),
-    role_type bool NOT NULL DEFAULT true,
+    is_available bool NOT NULL DEFAULT true,
     role_type ENUM("superadmin", "admin", "staff") NOT NULL,
     PRIMARY KEY (id)
 ) ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
@@ -40,7 +40,7 @@ CREATE TABLE complaint (
     description VARCHAR(45) NOT NULL,
     complaint_type_id INT UNSIGNED NOT NULL,
     complaint_status_id INT UNSIGNED NOT NULL,
-    assignee_id INT UNSIGNED NOT NULL,
+    assignee_id INT UNSIGNED NULL,
     file_url TEXT NULL,
     created_at DATETIME NOT NULL DEFAULT NOW(),
     PRIMARY KEY (id),
