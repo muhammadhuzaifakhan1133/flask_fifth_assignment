@@ -1,0 +1,4 @@
+flask
+pymysql
+pytest
+flask-jwt-extended
