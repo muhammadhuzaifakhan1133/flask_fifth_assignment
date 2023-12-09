@@ -1,0 +1,2 @@
+SWAGGER: https://huzaifakhan113.pythonanywhere.com/api/docs/
+APIS: https://huzaifakhan113.pythonanywhere.com
